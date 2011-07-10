@@ -19,13 +19,27 @@
                 <folder>languages</folder><!-- This makes one copy of languages. Is not really necessary-->
 	</files>
 	<languages folder="languages">
-		<language tag="en-GB">en-GB.mod_jcbr.ini</language>
-		<language tag="en-GB">en-GB.mod_jcbr.sys.ini</language>	
+		<language tag="en-GB">en-GB/en-GB.mod_jcbr.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_jcbr.sys.ini</language>	
 	</languages>
 
         <!--
 	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_CUSTOM_HTML" />
         -->
+        
+	<!-- SQL Files -->
+	<!-- Note: SQL Support added in 1.6 for modules and plugins -->
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+        
 	<config>
 		<fields name="params">
 			<fieldset name="basic">

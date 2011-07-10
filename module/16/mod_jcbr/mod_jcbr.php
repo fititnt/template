@@ -8,6 +8,9 @@
 // no direct access
 defined('_JEXEC') or die;
 
+// Include helper file once
+require_once dirname(__FILE__).'/helper.php';
+
 if ($params->def('prepare_content', 1))
 {
 	JPluginHelper::importPlugin('content');
