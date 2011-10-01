@@ -3,6 +3,14 @@ Read files named fititnt.txt on each directory for adicional info.
 
 Licenses: Mixed
 
+
+Subfolders
+	- joomla
+		Joomla related features
+	- php
+		PHP languange related features
+	-
+	
 ----------------------------------- How to use ---------------------------------
 
 --------------------------- Instalation & Dependences --------------------------
