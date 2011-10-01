@@ -1,1 +1,2 @@
-GIT Repository for store a few base packages of Joomla extensions
+Generic templates
+
