@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="library" version="1.6" method="upgrade">
+        <!-- Name of folder inside of /libraries -->
+	<libraryname>helloworld</libraryname>
+        <!-- Name of library -->
+        <name>LIB_HELLOWORLD</name>
+        <!-- Description of library -->
+	<description>LIB_JUGRS_XML_DESCRIPTION</description>
+	<creationDate>2011-05-26</creationDate>
+	<author>Joomla! Coders Brazil - @JCoderBR</author>
+	<authorEmail>jcoderbr@gmail.com</authorEmail>
+	<authorUrl>https://github.com/JCBR/lib_helloworld</authorUrl>
+	<copyright>Copyright (C) 2005 - 2011 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<version>0.1</version>
+	<packagerurl>http://www.joomla.org</packagerurl>
+	<!-- 
+	Soon. Not now.
+	<updateservers>http://update.joomla.org/libraries/alpha</updateservers> -->
+	<files>
+		<!-- Tag 'file' add a single file -->
+                <file>helloworld.php</file>
+		<file>loader.php</file>
+		<file>helloworld.xml</file>
+		<file>changelog.txt</file>
+		<file>help.txt</file>
+		<!-- Tag 'folder' add a entire folder and all inside -->
+		<folder>facebook</folder>
+		<folder>twitter</folder>
+                <!-- The 'language folder is not really need, but is possible make a copy to library -->
+		<folder>language</folder>
+	</files>
+ 		<languages folder="language">
+			<language tag="en-GB">en-GB/en-GB.lib_helloworld.ini</language>
+			<language tag="en-GB">en-GB/en-GB.lib_helloworld.sys.ini</language>
+		</languages>
+</extension>
