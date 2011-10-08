@@ -1,8 +1,9 @@
-PHP Joomla 1.6+ Library <libraryname>
-<description>
+PHP Joomla 1.7+ Library libexample
+{description}
 
-Author: <author>
-Site: <site>
+Author: {author} - {authoremail} - {authorurl}
+{copyright}
+{license}
 
 
 	
@@ -14,28 +15,40 @@ library will be simple for you. Fist, import the library:
 
 They, call some instance name. Normaly the same name of one folder.
 
-	$facebook = JUGRS::getFacebook();
+	$subpackage = LibExample::getSubpackage();
 
-Then, call some function inside this instance. All they are on 
-/libraries/jugrs/"name"/"name".php. Some of these funcions will return one 
-value that must be printed, and others just return TRUE if it runs, and will do 
-something for you on your site. One another example:
+Then, call some function inside this instance. They are, for this example,
+inside of folder /libraries/{libexample}/{subpackage}/
 
-	echo $facebook->comment();
+Some examples:
+
+        $subpackage->set('variable','private variable value');
+
+        $subpackage->public = 'Public variable value';
+
+        $subpackage->debug();
+
+Will print:
+
+LibexampleSubpackage Object
+(
+    [variable:LibexampleSubpackage:private] => private variable value
+    [public] => Public variable value
+)
 
 --------------------------- Instalation & Dependences --------------------------
 Dependences:
-- CMS Joomla 1.6+ (or equivalent)
+- CMS Joomla 1.7+ (or equivalent)
 - PHP 5.2+
 
 
 HOW TO INSTALL?
     JOOMLA 1.5
 	
-This library is aimed to use on Joomla 1.6+. It provably can run also on Joomla 
-1.5 but not with the installer. Try copy to livraries folders and see if works.
+This library is aimed to use on Joomla 1.7+. It provably can run also on Joomla 
+1.7 but not with the installer. Try copy to livraries folders and see if works.
 
-    JOOMLA 1.6+
+    JOOMLA 1.7+
 		
         EXTENSION MANAGER: INSTALL
 		
@@ -50,6 +63,8 @@ Copy contents of this folder for folder /libraries/jugrs and click discover, and
 
 ----------------------------------- Changelog ----------------------------------
 
+{createddate}: 1.0alpha
+! Library created
 
 CHANGELOG LEGEND:
 + Added

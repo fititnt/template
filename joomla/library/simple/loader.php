@@ -1,48 +1,33 @@
 <?php
+
 /*
- * @package         <packagename>
- * @author          <authorname>
- * @version         <version>
- * @copyright       Copyright (C) <year> <copyright>
- * @license         GNU General Public License version 3. See license.txt
+ * @package         {packagename}
+ * @subpackage      {subpackage}
+ * @author          {authorname}
+ * @version         {version}
+ * @copyright       {copyright}
+ * @license         {license}
  * 
- * @note            Initial template based on https://github.com/fititnt/template via @fititnt
+ * @note            Startup based on https://github.com/fititnt/template
  */
 defined('JPATH_PLATFORM') or die('Restricted access');
 
+abstract class LibExample {
 
-abstract class LibExample
-{
+    public static $subpackage = null;
 
-    public static $facebook = null;
-    public static $twitter = null;
-
-    
-    /*
-    * Return Facebook Object, creating if aready doesent exists
-    */
-    public static function getFacebook()
-	{
-		if (!self::$facebook) {
-			jimport('helloworld.facebook.load');
-
-			self::$facebook = LoadFacebook::getInstance();
-		}
-		return self::$facebook;
-	}
-        
 
     /*
-    * Return Facebook Object, creating if aready doesent exists
-    */
-    public static function getTwitter()
-	{
-		if (!self::$twitter) {
-			jimport('helloworld.twitter.load');
+     * Return Facebook Object, creating if aready doesent exists
+     */
 
-			self::$twitter = LoadTwitter::getInstance();
-		}
-		return self::$twitter;
-	}
-	
+    public static function getSubpackage() {
+        if (!self::$subpackage) {
+            jimport('libexample.subpackage.load');
+
+            self::$subpackage = LoadSubpackage::getInstance();
+        }
+        return self::$subpackage;
+    }
+
 }

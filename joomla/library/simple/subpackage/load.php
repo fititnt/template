@@ -1,7 +1,8 @@
 <?php
+
 /*
  * @package         {packagename}
- * @subpackage
+ * @subpackage      {subpackage}
  * @author          {authorname}
  * @version         {version}
  * @copyright       {copyright}
@@ -11,4 +12,16 @@
  */
 defined('JPATH_PLATFORM') or die('Restricted access');
 
-require_once dirname(__FILE__) . DS . 'loader.php';
+class LoadSubpackage {
+    
+    /*
+     *  @todo: add some description here. 
+     */
+    public static function getInstance() 
+    {
+        require_once 'subpackage.php';
+        $instance = new LibexampleSubpackage;
+        return $instance;
+    }
+
+}
