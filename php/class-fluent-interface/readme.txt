@@ -1,0 +1,1 @@
+Moved to https://github.com/fititnt/php-design-pattern/tree/master/FluentInterface
