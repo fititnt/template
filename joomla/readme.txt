@@ -1,0 +1,1 @@
+Moved. See https://github.com/fititnt/joomla-quickstart

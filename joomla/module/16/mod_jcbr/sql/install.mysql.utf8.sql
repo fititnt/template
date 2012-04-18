@@ -1,5 +1,0 @@
-CREATE TABLE IF NOT EXISTS #__mod_jcbr (
-	`id` INT NOT NULL AUTO_INCREMENT ,
-	`message` VARCHAR( 255 ) NOT NULL ,
-PRIMARY KEY ( `id` )
-);
